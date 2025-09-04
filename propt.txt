@@ -1,0 +1,207 @@
+Got it! Here’s a ready-to-paste **prompt** you can feed into a code-gen AI to produce your static site exactly as you described.
+
+---
+
+# PROMPT: Build a bilingual static site (RO/EN) for PFA + self-accounting + e-bike rentals for couriers
+
+**Goal:** Create a modern, mobile-first, static marketing website that targets food delivery riders (Bolt Food, Glovo, Wolt, etc.) in Bucharest/Romania (but inclusive for non-Romanian speakers like Nepali/Sri Lankan/Indian riders). The site promotes:
+
+1. Creating a PFA from scratch
+2. Teaching riders to handle basic self-accounting
+3. Renting electric bikes (best option for Bolt couriers vs. car/scooter)
+
+## Tech constraints
+
+* **Plain HTML + JS** only (no frameworks).
+* **Tailwind CSS** via CDN.
+* Single-page site (can have internal sections + modal).
+* **Bilingual:** Romanian (default) and English.
+* Language switcher on the top-right; persist choice in `localStorage`.
+* All strings stored in a simple `i18n` object in a separate `lang.js` (or inline script)—no server.
+* Clean, accessible, WCAG-friendly.
+* Lightweight (good Lighthouse scores).
+
+## Brand & style
+
+* Clean, sleek, high-contrast, courier-friendly.
+* Icons for clarity (SVG inline).
+* Rounded cards, soft shadows, generous spacing, big tap targets.
+* Sticky header with CTA, sticky bottom CTA on mobile.
+* Neutral color palette + one accent color for CTAs.
+
+## Layout / Sections (one page)
+
+1. **Header**
+
+   * Logo (text logo is fine)
+   * Nav links: “PFA Setup”, “Do-it-yourself Accounting”, “E-Bike Rental”, “Pricing”, “FAQ”, “Contact”
+   * **Language Switcher:** RO | EN
+   * **Primary CTA:** “Începe acum / Start now”
+
+2. **Hero**
+
+   * Headline that speaks to riders (short, bold).
+   * Subheadline (value prop).
+   * Two CTAs:
+
+     * Primary: “Începe acum / Start now” (scrolls to Pricing)
+     * Secondary: “Află cum funcționează / See how it works” (scrolls to PFA Setup)
+
+3. **Value Props (3 cards)**
+
+   * “Creează PFA de la zero”
+   * “Îți arătăm cum să ții singur contabilitatea”
+   * “Închiriem biciclete electrice optimizate pentru curieri”
+
+4. **PFA Setup (step-by-step)**
+
+   * 4–6 simple steps with icons.
+   * Clear list of what we handle vs. what rider does.
+   * “Document checklist” (accordion).
+
+5. **DIY Accounting (guide + micro-tooltips)**
+
+   * Explain basics (invoicing, expenses, taxes timeline).
+   * Small “sample invoice” image/modal.
+   * Download buttons for RO/EN “mini-guide PDF” (stub links).
+
+6. **E-Bike Rental**
+
+   * Benefits vs. car/scooter for Bolt/Glovo (costs, uptime, parking, fines).
+   * What’s included: maintenance, battery swaps, lock, helmet (illustrative).
+   * Simple **price card** (daily/weekly/monthly).
+   * “Book a bike” CTA opens a **modal form**.
+
+7. **Pricing (cards)**
+
+   * **PFA Setup**: fixed or monthly
+   * **DIY Accounting course**: one-time or subscription
+   * **E-Bike Rental**: weekly/monthly
+   * Each card: price, what’s included, CTA.
+
+8. **Social Proof**
+
+   * 2–3 testimonials (short, from riders, with avatar initials).
+
+9. **FAQ (accordion)**
+
+   * About PFA, taxes, documents, bike maintenance, deposits, language support.
+
+10. **Contact / Lead Form**
+
+    * Name, phone (WhatsApp-friendly), email, preferred language (RO/EN), interest (PFA / Accounting / E-Bike).
+    * **No backend**: for now, show a success toast and `console.log` form data. (Write a comment with how to wire later to form tools like Formspree.)
+
+11. **Footer**
+
+    * Links: Terms, Privacy, Cookies, ANPC (stub), Social icons.
+    * Small language reminder, office location (Bucharest).
+
+## Internationalization (example schema)
+
+Create `lang.js` with:
+
+```js
+window.I18N = {
+  ro: {
+    nav: { pfa: "PFA", accounting: "Contabilitate", ebike: "Bicicletă electrică", pricing: "Prețuri", faq: "Întrebări", contact: "Contact" },
+    cta: { start: "Începe acum", how: "Află cum funcționează", bookBike: "Rezervă bicicletă" },
+    hero: {
+      title: "Fă bani mai ușor ca rider: PFA, contabilitate simplă și biciclete electrice",
+      subtitle: "Te ajutăm să începi legal și eficient. Rapid, clar și pe înțelesul tău."
+    },
+    value: {
+      pfa: "Creează PFA de la zero",
+      acc: "Îți arătăm cum să ții singur contabilitatea",
+      bike: "Închiriem biciclete electrice optimizate pentru curieri"
+    },
+    // ...continue for all sections
+  },
+  en: {
+    nav: { pfa: "PFA Setup", accounting: "Accounting", ebike: "E-Bike", pricing: "Pricing", faq: "FAQ", contact: "Contact" },
+    cta: { start: "Start now", how: "See how it works", bookBike: "Book a bike" },
+    hero: {
+      title: "Earn smarter as a rider: PFA setup, simple accounting & e-bikes",
+      subtitle: "We help you start legally and efficiently. Fast, clear, and easy."
+    },
+    value: {
+      pfa: "Create your PFA from scratch",
+      acc: "We teach you simple self-accounting",
+      bike: "Rent e-bikes optimized for couriers"
+    },
+    // ...continue for all sections
+  }
+};
+```
+
+Implement `setLanguage(lang)` to:
+
+* Update `document.documentElement.lang`
+* Add `lang` class on `<html>` if helpful
+* Swap all `[data-i18n="path.to.key"]` texts
+* Save to `localStorage`
+
+## Interactions
+
+* Smooth scrolling on nav.
+* FAQ accordions with plain JS.
+* Modal for “Book a bike”.
+* Toast on form submit.
+* Input validation (basic) + accessible labels.
+* Sticky mobile bottom bar with “Start now” + “Book a bike”.
+
+## Accessibility
+
+* Semantic HTML, proper landmarks.
+* Alt text on images.
+* Focus states visible; `:focus-visible` styles.
+* Color contrast AA+.
+* Keyboard-navigable modals/accordions.
+
+## SEO & social
+
+* Unique `<title>` + meta description for RO/EN.
+* `hreflang` tags for RO and EN.
+* OpenGraph/Twitter meta with a generic image.
+* Structured data: `Organization` + `LocalBusiness` (JSON-LD) with city “Bucharest”.
+
+## Performance
+
+* Tailwind via CDN, single `app.js`, inline SVG icons.
+* Lazy-load any images.
+* No large libraries.
+
+## Deliverables
+
+* `index.html` (contains all sections)
+* `app.js` (nav, i18n swap, accordions, modal, toasts, form handling)
+* `lang.js` (I18N object)
+* `favicon.svg` (simple glyph)
+* Placeholder images/SVGs for icons
+
+## Copy (starter, bilingual)
+
+Use short, friendly copy aimed at couriers. Prefer bullet points and numbers.
+
+* Hero RO: “Fă bani mai ușor ca rider.” EN: “Earn smarter as a rider.”
+* PFA steps (RO): “Completezi formularul”, “Îți pregătim dosarul”, “Depunem online”, “Primești actele”, “Te ajutăm să emiți prima factură”.
+* E-Bike card bullets (RO): “Baterie inclusă”, “Service”, “Antifurt”, “Asistență WhatsApp”. EN equivalents too.
+
+## Pricing (example content)
+
+* **PFA Setup:** 0 lei înființare / 99 lei-lunar suport (example—use placeholder).
+* **DIY Accounting:** 149 lei one-time (mini-course + șabloane).
+* **E-Bike Rental:** 499 lei/7 zile sau 1.699 lei/lună (include service + baterie).
+  (These are placeholders; make them easy to edit.)
+
+## Extras
+
+* Add small language note: “We also support Nepali/English on WhatsApp.”
+* Add WhatsApp click-to-chat button (stub link).
+* Comment in code where to wire analytics (GA4) and form endpoint.
+
+**Now generate the full codebase with real HTML/JS using Tailwind CDN, fill in all i18n keys, and provide clean, production-ready markup.**
+
+---
+
+If you want, I can also generate the initial **code scaffold** for you right away.

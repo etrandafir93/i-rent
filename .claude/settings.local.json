@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\irent-food/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\irent-food/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
