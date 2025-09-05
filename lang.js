@@ -1,7 +1,7 @@
 window.I18N = {
   ro: {
     meta: {
-      title: "iRent Food - PFA, Contabilitate și Biciclete Electrice pentru Curieri",
+      title: "Rider i-Rent - PFA, Contabilitate și Biciclete Electrice pentru Curieri",
       description: "Fă mai mulți bani ca rider! Te ajutăm cu PFA-ul, contabilitatea și îți oferim biciclete electrice. De la 3.500 lei la 6.500 lei pe lună."
     },
     nav: { 
@@ -22,8 +22,132 @@ window.I18N = {
       submit: "Trimite mesajul"
     },
     hero: {
-      title: "Fă mai mulți bani ca rider: PFA, contabilitate simplă și biciclete electrice",
-      subtitle: "Te ajutăm să treci de la 3.500 lei la 6.500 lei pe lună. Legal, simplu și transparent."
+      title: "Păstrează-ți banii, muncești pentru tine, nu pentru flotă.",
+      subtitle: "Pachetul complet pentru livratori Bolt/Glovo – fără flotă, fără comisioane ascunse.",
+      explanation: "PFA + contabilitate simplă + închiriere bicicletă electrică → tot ce ai nevoie ca să începi legal și să rămâi cu mai mulți bani în buzunar.",
+      benefits: [
+        "Fără flotă, fără comision de 5–10%",
+        "Fără taxe salariale de 45% ca angajat",
+        "Îți deduci cheltuielile (chirie, telefon, transport)",
+        "Poți accesa credite bancare pe firmă după 3 luni",
+        "E-bike premium la doar 1.000 lei/lună"
+      ]
+    },
+    audience: {
+      title: "Pentru cine este acest pachet?",
+      fullTime: {
+        title: "Full-time riders",
+        desc: "cei care vor venituri maxime."
+      },
+      independence: {
+        title: "Independență totală",
+        desc: "cei care s-au săturat de comisioane de flotă și vor să păstreze banii."
+      },
+      partTime: {
+        title: "Part-time & Studenți",
+        desc: "ideal pentru program flexibil."
+      }
+    },
+    earnings: {
+      title: "Cu ce câștigi mai mult pe Bolt Food?",
+      table: {
+        vehicle: "Vehicul",
+        gross: "Venit brut lunar*",
+        expenses: "Cheltuieli (lunare)",
+        profit: "Profit net estimat",
+        ebike: "Bicicletă electrică",
+        scooter: "Scuter",
+        car: "Mașină"
+      },
+      note: "Calcul orientativ: 8h/zi × 6 zile/săptămână + bacșiș (~70 lei/zi). În perioadele aglomerate, bicicleta electrică poate dubla veniturile → e mai rapidă și mai flexibilă decât scuterul sau mașina.",
+      benefits: {
+        title: "Beneficii extra pentru e-bike:",
+        items: [
+          "Costuri mai mici – fără combustibil, RCA, ITP",
+          "Timp operațional mai mare – nu stai blocat în trafic",
+          "Fără probleme de parcare sau amenzi",
+          "Acces în zone pietonale și centre comerciale",
+          "Zero emisii – viitorul transportului urban"
+        ]
+      },
+      cta: {
+        title: "Închiriere E-bike premium",
+        includes: "Include service lunar + schimb baterii la nevoie."
+      }
+    },
+    comparison: {
+      title: "Cât pierzi în Flotă vs. cât câștigi cu PFA",
+      fleet: {
+        title: "Angajat prin flotă",
+        gross: "Venit brut",
+        fleet: "Flota reține",
+        taxes: "Taxe salariale",
+        net: "Profit net:"
+      },
+      pfaNorm: {
+        title: "PFA cu normă de venit",
+        gross: "Venit brut",
+        taxes: "Taxe fixe (CAS + CASS + impozit)",
+        net: "Profit net:"
+      },
+      pfaReal: {
+        title: "PFA cu sistem real",
+        gross: "Venit brut",
+        deductions: "Cheltuieli deductibile (chirie, transport, telefon etc.)",
+        taxes: "Taxe",
+        net: "Profit net:"
+      },
+      note: "Odată cu reorganizarea fiscală, artificiile de tip convenție civilă, parteneriat sau drepturi de autor dispar → taxele trebuie plătite integral."
+    },
+    services: {
+      title: "Ce îți oferim concret",
+      items: [
+        {
+          title: "Creăm PFA de la zero",
+          desc: "prin avocații noștri (totul legal, rapid)."
+        },
+        {
+          title: "Te învățăm contabilitatea simplă",
+          desc: "→ 5 min/lună."
+        },
+        {
+          title: "Închiriem bicicletă electrică",
+          desc: "optimizată pentru curieri."
+        },
+        {
+          title: "Suport complet",
+          desc: "ca să deduci cheltuieli și să depui declarații."
+        },
+        {
+          title: "Pachet complet",
+          desc: "tot ce-ți trebuie ca să lucrezi legal și profitabil."
+        }
+      ]
+    },
+    steps: {
+      title: "Pași",
+      items: [
+        {
+          title: "Completezi formularul nostru.",
+          desc: "Îți luăm toate datele necesare."
+        },
+        {
+          title: "Îți pregătim dosarul complet.",
+          desc: "Echipa noastră pregătește tot."
+        },
+        {
+          title: "Depunem actele online la ANAF.",
+          desc: "Ne ocupăm de toată birocratia."
+        },
+        {
+          title: "Primești documentele în 3–5 zile.",
+          desc: "Îți trimitem tot și explicăm pașii."
+        },
+        {
+          title: "Într-o săptămână ești pe stradă",
+          desc: "cu bicicleta și cont de rider activ."
+        }
+      ]
     },
     value: {
       pfa: {
@@ -199,7 +323,7 @@ window.I18N = {
         {
           name: "Alex M.",
           role: "Rider Bolt Food",
-          text: "Cu PFA-ul făcut prin iRent Food am trecut de la 3.200 lei la 5.800 lei pe lună. Bicicleta e perfectă pentru oraș!"
+          text: "Cu PFA-ul făcut prin Rider i-Rent am trecut de la 3.200 lei la 5.800 lei pe lună. Bicicleta e perfectă pentru oraș!"
         },
         {
           name: "Maria S.",
@@ -217,28 +341,20 @@ window.I18N = {
       title: "Întrebări frecvente",
       items: [
         {
-          question: "Cât timp durează să îmi fac PFA-ul?",
-          answer: "Procesul durează 3-5 zile lucrătoare de la momentul în care ne trimiți documentele complete. ANAF aprobă de obicei în 24-48 ore, iar restul timpului îl petrecem pregătind dosarul și explicându-ți pașii următori."
+          question: "Cât durează să încep?",
+          answer: "→ În max. 7 zile poți ieși cu bicicleta la Bolt."
         },
         {
-          question: "Ce taxe plătesc ca PFA?",
-          answer: "Ca PFA pe norma de venit, plătești o taxă fixă lunară de aprox. 300-400 lei (în funcție de localitatea în care îți faci PFA). Plus CASS (asigurări de sănătate) care e aproximativ 10% din venitul declarat, dar cu deducerile corecte aceasta scade semnificativ."
+          question: "Am nevoie de contabil?",
+          answer: "→ Nu, îți arătăm noi cum să faci în 5 min/lună."
         },
         {
-          question: "Pot folosi bicicleta pentru alte activități?",
-          answer: "Bicicleta este închiriată specific pentru activitatea de curierat. O poți folosi pentru transportul personal când nu ești în program, dar contractul specifică folosirea primară pentru food delivery."
+          question: "Trebuie să emit facturi?",
+          answer: "→ Nu, doar completezi declarația unică."
         },
         {
-          question: "Ce se întâmplă dacă se strică bicicleta?",
-          answer: "Service-ul complet este inclus în închiriere. La orice problemă tehnică, ne contactezi pe WhatsApp și în maxim 2 ore ai o soluție - fie reparație la fața locului, fie schimb temporar cu altă bicicletă."
-        },
-        {
-          question: "Oferiți suport în engleză?",
-          answer: "Da! Avem suport complet în engleză pe WhatsApp pentru riderii din comunitatea nepaleză, srilanceză și indiană. Toate documentele și explicațiile pot fi furnizate în engleză."
-        },
-        {
-          question: "Pot returna bicicleta înainte de termen?",
-          answer: "Da, poți returna bicicleta oricând cu preaviz de 48 ore. Îți returnăm garanția integral și calculăm proporțional perioada de închiriere rămasă."
+          question: "Ce garanție se cere la bicicletă?",
+          answer: "→ 500 lei, returnabili."
         }
       ]
     },
@@ -290,7 +406,7 @@ window.I18N = {
         cookies: "Politica cookies",
         anpc: "ANPC"
       },
-      copyright: "© 2024 iRent Food. Toate drepturile rezervate.",
+      copyright: "© 2024 Rider i-Rent. Toate drepturile rezervate.",
       note: "Suport multilingv: Română, English, नेपाली"
     },
     toast: {
@@ -320,7 +436,7 @@ window.I18N = {
   },
   en: {
     meta: {
-      title: "iRent Food - PFA Setup, Accounting & E-Bikes for Couriers",
+      title: "Rider i-Rent - PFA Setup, Accounting & E-Bikes for Couriers",
       description: "Earn more as a food delivery rider! We help with PFA setup, accounting, and provide e-bikes. From €175 to €325 per month."
     },
     nav: { 
@@ -341,8 +457,16 @@ window.I18N = {
       submit: "Send message"
     },
     hero: {
-      title: "Earn more as a rider: PFA setup, simple accounting & e-bikes",
-      subtitle: "We help you go from €175 to €325 per month. Legal, simple and transparent."
+      title: "Keep your money, work for yourself, not for the fleet.",
+      subtitle: "Complete package for Bolt/Glovo couriers – no fleet, no hidden commissions.",
+      explanation: "PFA + simple accounting + e-bike rental → everything you need to start legally and keep more money in your pocket.",
+      benefits: [
+        "No fleet, no 5–10% commission",
+        "No 45% payroll taxes as employee",
+        "Deduct your expenses (rent, phone, transport)",
+        "Access bank loans on company after 3 months",
+        "Premium e-bike for only €50/month"
+      ]
     },
     value: {
       pfa: {
@@ -518,7 +642,7 @@ window.I18N = {
         {
           name: "Alex M.",
           role: "Bolt Food Rider",
-          text: "With the PFA setup through iRent Food I went from €160 to €290 per month. The bike is perfect for the city!"
+          text: "With the PFA setup through Rider i-Rent I went from €160 to €290 per month. The bike is perfect for the city!"
         },
         {
           name: "Maria S.", 
@@ -609,7 +733,7 @@ window.I18N = {
         cookies: "Cookie Policy", 
         anpc: "ANPC"
       },
-      copyright: "© 2024 iRent Food. All rights reserved.",
+      copyright: "© 2024 Rider i-Rent. All rights reserved.",
       note: "Multilingual support: Română, English, नेपाली"
     },
     toast: {

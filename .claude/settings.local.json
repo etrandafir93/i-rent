@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\irent-food/**)",
-      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\irent-food/**)"
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\irent-food/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent\\img/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)"
     ],
     "deny": [],
     "ask": []
