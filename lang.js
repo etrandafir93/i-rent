@@ -1,7 +1,7 @@
 window.I18N = {
   ro: {
     meta: {
-      title: "Rider i-Rent - PFA, Contabilitate și Biciclete Electrice pentru Curieri",
+      title: "Livrator i-Rent - PFA, Contabilitate și Biciclete Electrice pentru Curieri",
       description: "Fă mai mulți bani ca rider! Te ajutăm cu PFA-ul, contabilitatea și îți oferim biciclete electrice. De la 3.500 lei la 6.500 lei pe lună."
     },
     nav: { 
@@ -324,7 +324,7 @@ window.I18N = {
         {
           name: "Alex M.",
           role: "Rider Bolt Food",
-          text: "Cu PFA-ul făcut prin Rider i-Rent am trecut de la 3.200 lei la 5.800 lei pe lună. Bicicleta e perfectă pentru oraș!"
+          text: "Cu PFA-ul făcut prin Livrator i-Rent am trecut de la 3.200 lei la 5.800 lei pe lună. Bicicleta e perfectă pentru oraș!"
         },
         {
           name: "Maria S.",
@@ -407,7 +407,7 @@ window.I18N = {
         cookies: "Politica cookies",
         anpc: "ANPC"
       },
-      copyright: "© 2024 Rider i-Rent. Toate drepturile rezervate.",
+      copyright: "© 2024 Livrator i-Rent. Toate drepturile rezervate.",
       note: "Suport multilingv: Română, English"
     },
     toast: {
@@ -437,7 +437,7 @@ window.I18N = {
   },
   en: {
     meta: {
-      title: "Rider i-Rent - PFA Setup, Accounting & E-Bikes for Couriers",
+      title: "Livrator i-Rent - PFA Setup, Accounting & E-Bikes for Couriers"
       description: "Earn more as a food delivery rider! We help with PFA setup, accounting, and provide e-bikes. From €175 to €325 per month."
     },
     nav: { 
@@ -460,8 +460,7 @@ window.I18N = {
     hero: {
       title: "Keep your money, work for yourself, not for the fleet.",
       heroSubtitle: "Lower taxes to the state, zero commission to the fleet.",
-      subtitle: "Complete package for Bolt/Glovo couriers – no fleet, no hidden commissions.",
-      explanation: "PFA + simple accounting + e-bike rental → everything you need to start legally and keep more money in your pocket.",
+      subtitle: "PFA · Accounting · E-bike rental",
       benefits: [
         "No fleet, no 5–10% commission",
         "No 45% payroll taxes as employee",
@@ -469,6 +468,122 @@ window.I18N = {
         "Access bank loans on company after 3 months",
         "Premium e-bike for only €50/month",
         "Flexible schedule – work as much and when you want"
+      ]
+    },
+    audience: {
+      title: "Who is this package for?",
+      fullTime: {
+        title: "Full-time riders",
+        desc: "those who want maximum income."
+      },
+      independence: {
+        title: "Total independence",
+        desc: "those who are tired of fleet commissions and want to keep the money."
+      },
+      partTime: {
+        title: "Part-time & Students",
+        desc: "ideal for flexible schedule."
+      }
+    },
+    earnings: {
+      title: "How much more do you earn on Bolt Food?",
+      table: {
+        vehicle: "Vehicle",
+        gross: "Monthly gross income*",
+        expenses: "Expenses (monthly)",
+        profit: "Estimated net profit",
+        ebike: "Electric bike",
+        scooter: "Scooter",
+        car: "Car"
+      },
+      note: "Indicative calculation: 8h/day × 6 days/week + tips (~€3.5/day). During busy periods, electric bike can double income → it's faster and more flexible than scooter or car.",
+      benefits: {
+        title: "Extra benefits for e-bike:",
+        items: [
+          "Lower costs – no fuel, insurance, technical inspection",
+          "More operational time – no traffic jams",
+          "No parking problems or fines",
+          "Access to pedestrian zones and shopping centers",
+          "Zero emissions – the future of urban transport"
+        ]
+      },
+      cta: {
+        title: "Premium E-bike rental",
+        includes: "Includes monthly service + battery replacement when needed."
+      }
+    },
+    comparison: {
+      title: "How much you lose in Fleet vs. how much you earn with PFA",
+      fleet: {
+        title: "Employee through fleet",
+        gross: "Gross income",
+        fleet: "Fleet retains",
+        taxes: "Payroll taxes",
+        net: "Net profit:"
+      },
+      pfaNorm: {
+        title: "PFA with income norm",
+        gross: "Gross income",
+        taxes: "Fixed taxes (CAS + CASS + tax)",
+        net: "Net profit:"
+      },
+      pfaReal: {
+        title: "PFA with real system",
+        gross: "Gross income",
+        deductions: "Deductible expenses (rent, transport, phone etc.)",
+        taxes: "Taxes",
+        net: "Net profit:"
+      },
+      note: "With fiscal reorganization, tricks like civil convention, partnership or copyright disappear → taxes must be paid in full."
+    },
+    services: {
+      title: "What we offer concretely",
+      items: [
+        {
+          title: "We create PFA from scratch",
+          desc: "through our lawyers (everything legal, fast)."
+        },
+        {
+          title: "We teach you simple accounting",
+          desc: "→ 5 min/month."
+        },
+        {
+          title: "We rent electric bikes",
+          desc: "optimized for couriers."
+        },
+        {
+          title: "Complete support",
+          desc: "to deduct expenses and file declarations."
+        },
+        {
+          title: "Complete package",
+          desc: "everything you need to work legally and profitably."
+        }
+      ]
+    },
+    steps: {
+      title: "Steps",
+      items: [
+        {
+          title: "Fill out our form.",
+          desc: "We collect all necessary data."
+        },
+        {
+          title: "We prepare your complete file.",
+          desc: "Our team prepares everything."
+        },
+        {
+          title: "We submit documents online to ANAF.",
+          desc: "We handle all bureaucracy."
+        },
+        {
+          title: "You receive documents in 3–5 days.",
+          desc: "We send everything and explain the steps."
+        },
+        {
+          title: "In one week you're on the street",
+          desc: "with bike and active rider account."
+        }
       ]
     },
     value: {
@@ -645,7 +760,7 @@ window.I18N = {
         {
           name: "Alex M.",
           role: "Bolt Food Rider",
-          text: "With the PFA setup through Rider i-Rent I went from €160 to €290 per month. The bike is perfect for the city!"
+          text: "With the PFA setup through Livrator i-Rent I went from €160 to €290 per month. The bike is perfect for the city!"
         },
         {
           name: "Maria S.", 
@@ -736,7 +851,7 @@ window.I18N = {
         cookies: "Cookie Policy", 
         anpc: "ANPC"
       },
-      copyright: "© 2024 Rider i-Rent. All rights reserved.",
+      copyright: "© 2024 Livrator i-Rent. All rights reserved.",
       note: "Multilingual support: Română, English"
     },
     toast: {
