@@ -99,23 +99,63 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="w-full">
-        <img src="img/7d16d512-752c-4c89-aa17-c1f7257b7119.jpg" alt="Delivery rider on electric bike with neon city lights - Pe PFA rămâi cu dublu față de flotă" class="w-full h-auto">
+    <!-- Hero Image Section -->
+    <section class="relative w-full h-screen">
+        <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01k4fesyt1fvft9njgpfw750tt%2F1757160589_img_1.webp?st=2025-09-06T10%3A33%3A07Z&se=2025-09-12T11%3A33%3A07Z&sks=b&skt=2025-09-06T10%3A33%3A07Z&ske=2025-09-12T11%3A33%3A07Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=OxIOLo31v%2BlX28UCH4LBEjXOxSd1aIwMY18sqyOWIu8%3D&az=oaivgprodscus" alt="Delivery rider on electric bike with neon city lights" class="w-full h-full object-cover object-top">
+        
+        <!-- Title Overlay -->
+        <div class="absolute bottom-0 left-0 right-0 z-10 pb-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-black text-white mb-4 drop-shadow-lg" data-i18n="hero.title">
+                    Păstrează-ți banii, muncești pentru tine, nu pentru flotă.
+                </h1>
+                <p class="text-xl md:text-2xl text-white font-semibold drop-shadow-lg" data-i18n="hero.heroSubtitle">
+                    Mai puține taxe la stat, zero comision la flotă.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Dark gradient overlay for better text readability -->
+        <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/40 to-transparent z-5"></div>
     </section>
 
     <!-- Content Section -->
     <section class="bg-gradient-to-br from-neon-cyan/5 to-neon-magenta/5 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-4xl mx-auto">
-                <!-- Subtitle -->
+                <!-- Subtitle & Benefits -->
                 <div class="bg-white rounded-2xl p-8 mb-10 shadow-lg border-2 border-neon-cyan/20">
-                    <p class="text-2xl md:text-3xl font-bold text-neon-magenta mb-4" data-i18n="hero.subtitle">
-                        Pachetul complet pentru livratori Bolt/Glovo – fără flotă, fără comisioane ascunse.
-                    </p>
-                    <p class="text-xl md:text-2xl text-gray-700" data-i18n="hero.explanation">
-                        PFA + contabilitate simplă + închiriere bicicletă electrică → tot ce ai nevoie ca să începi legal și să rămâi cu mai mulți bani în buzunar.
-                    </p>
+                    <h1 class="text-2xl md:text-4xl font-bold text-neon-magenta mb-6 text-center" data-i18n="hero.subtitle">
+                        PFA · Contabilitate · Închiriere de biciclete electrice
+                    </h1>
+                    
+                    <!-- Benefits List -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.0">Fără flotă, fără comision de 5–10%</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.1">Fără taxe salariale de 45% ca angajat</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.2">Îți deduci cheltuielile (chirie, telefon, transport)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.3">Poți accesa credite bancare pe firmă după 3 luni</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.4">E-bike premium la doar 1.000 lei/lună</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span class="font-semibold text-sm text-gray-700" data-i18n="hero.benefits.5">Program flexibil – lucrezi cât vrei și când vrei</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- CTA Buttons -->
@@ -126,7 +166,7 @@
                     <button onclick="openModal('bike-modal')" class="border-2 border-neon-magenta text-neon-magenta px-10 py-5 rounded-pill text-xl font-bold hover:bg-neon-magenta hover:text-white transition-colors">
                         Rezervă bicicletă
                     </button>
-                    <a href="https://wa.me/40123456789" class="bg-green-500 text-white px-10 py-5 rounded-pill text-xl font-bold hover:bg-green-600 transition-colors text-center">
+                    <a href="https://wa.me/4077579706" class="bg-green-500 text-white px-10 py-5 rounded-pill text-xl font-bold hover:bg-green-600 transition-colors text-center">
                         WhatsApp
                     </a>
                 </div>
@@ -134,33 +174,6 @@
         </div>
     </section>
 
-    <!-- Quick Benefits Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="flex items-center justify-center bg-gray-50 rounded-2xl p-4 shadow-md">
-                    <span class="text-green-500 text-xl mr-3">✅</span>
-                    <span class="font-semibold text-sm" data-i18n="hero.benefits.0">Fără flotă, fără comision de 5–10%</span>
-                </div>
-                <div class="flex items-center justify-center bg-gray-50 rounded-2xl p-4 shadow-md">
-                    <span class="text-green-500 text-xl mr-3">✅</span>
-                    <span class="font-semibold text-sm" data-i18n="hero.benefits.1">Fără taxe salariale de 45% ca angajat</span>
-                </div>
-                <div class="flex items-center justify-center bg-gray-50 rounded-2xl p-4 shadow-md">
-                    <span class="text-green-500 text-xl mr-3">✅</span>
-                    <span class="font-semibold text-sm" data-i18n="hero.benefits.2">Îți deduci cheltuielile (chirie, telefon, transport)</span>
-                </div>
-                <div class="flex items-center justify-center bg-gray-50 rounded-2xl p-4 shadow-md">
-                    <span class="text-green-500 text-xl mr-3">✅</span>
-                    <span class="font-semibold text-sm" data-i18n="hero.benefits.3">Poți accesa credite bancare pe firmă după 3 luni</span>
-                </div>
-                <div class="flex items-center justify-center bg-gray-50 rounded-2xl p-4 shadow-md">
-                    <span class="text-green-500 text-xl mr-3">✅</span>
-                    <span class="font-semibold text-sm" data-i18n="hero.benefits.4">E-bike premium la doar 1.000 lei/lună</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Target Audience Section -->
     <section class="py-16 bg-white">
@@ -191,182 +204,112 @@
         </div>
     </section>
 
-    <!-- Vehicle Earnings Comparison -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6" data-i18n="earnings.title">Cu ce câștigi mai mult pe Bolt Food?</h2>
-            </div>
-            
-            <!-- Earnings Table -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
-                <div class="overflow-x-auto">
-                    <table class="w-full">
-                        <thead>
-                            <tr class="border-b-2 border-gray-200">
-                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.vehicle">Vehicul</th>
-                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.gross">Venit brut lunar*</th>
-                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.expenses">Cheltuieli (lunare)</th>
-                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.profit">Profit net estimat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-100 bg-green-50">
-                                <td class="py-4 px-4 font-semibold">🚲 <span data-i18n="earnings.table.ebike">Bicicletă electrică</span></td>
-                                <td class="py-4 px-4">~9.200 lei</td>
-                                <td class="py-4 px-4">Chirie 1.000 lei + curent ~100 lei</td>
-                                <td class="py-4 px-4 font-bold text-green-600">~8.100 lei</td>
-                            </tr>
-                            <tr class="border-b border-gray-100">
-                                <td class="py-4 px-4 font-semibold">🛵 <span data-i18n="earnings.table.scooter">Scuter</span></td>
-                                <td class="py-4 px-4">~10.000 lei</td>
-                                <td class="py-4 px-4">Chirie 1.500 lei + benzină + service ~1.000 lei</td>
-                                <td class="py-4 px-4 font-bold text-orange-600">~7.500 lei</td>
-                            </tr>
-                            <tr class="border-b border-gray-100">
-                                <td class="py-4 px-4 font-semibold">🚗 <span data-i18n="earnings.table.car">Mașină</span></td>
-                                <td class="py-4 px-4">~9.200 lei</td>
-                                <td class="py-4 px-4">Chirie 2.000 lei + combustibil + întreținere ~1.500 lei</td>
-                                <td class="py-4 px-4 font-bold text-red-600">~5.700 lei</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
-                    <p class="text-sm text-gray-700"><span class="font-bold">⚡ Notă:</span> <span data-i18n="earnings.note">Calcul orientativ: 8h/zi × 6 zile/săptămână + bacșiș (~70 lei/zi). În perioadele aglomerate, bicicleta electrică poate dubla veniturile → e mai rapidă și mai flexibilă decât scuterul sau mașina.</span></p>
-                </div>
-            </div>
-            
-            <!-- E-bike Benefits -->
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-xl font-bold mb-6 text-green-600" data-i18n="earnings.benefits.title">Beneficii extra pentru e-bike:</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-green-500 text-xl mr-3">✅</span>
-                            <span data-i18n="earnings.benefits.items.0">Costuri mai mici – fără combustibil, RCA, ITP</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 text-xl mr-3">✅</span>
-                            <span data-i18n="earnings.benefits.items.1">Timp operațional mai mare – nu stai blocat în trafic</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 text-xl mr-3">✅</span>
-                            <span data-i18n="earnings.benefits.items.2">Fără probleme de parcare sau amenzi</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 text-xl mr-3">✅</span>
-                            <span data-i18n="earnings.benefits.items.3">Acces în zone pietonale și centre comerciale</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 text-xl mr-3">✅</span>
-                            <span data-i18n="earnings.benefits.items.4">Zero emisii – viitorul transportului urban</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-gradient-to-br from-neon-cyan/10 to-neon-magenta/10 rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-xl font-bold mb-6" data-i18n="earnings.cta.title">Închiriere E-bike premium</h3>
-                    <div class="space-y-3 mb-6">
-                        <p class="text-gray-700"><span class="font-bold">Omega/Zumo</span> → 1.000 lei/lună + garanție 500 lei.</p>
-                        <p class="text-sm text-gray-600" data-i18n="earnings.cta.includes">Include service lunar + schimb baterii la nevoie.</p>
-                    </div>
-                    <a href="https://wa.me/40123456789" class="inline-block bg-green-500 text-white px-6 py-3 rounded-pill font-bold hover:bg-green-600 transition-colors">
-                        Rezervă direct pe WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Fleet vs PFA Comparison -->
-    <section class="py-16 bg-white">
+    <section id="pfa" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6" data-i18n="comparison.title">Cât pierzi în Flotă vs. cât câștigi cu PFA</h2>
+                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6">Cum colaborezi?</h2>
+                <p class="text-xl text-gray-600 mb-6">Scenariu: venit brut 6.000 lei/lună</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <!-- Fleet Employee -->
-                <div class="bg-red-50 rounded-2xl p-8 shadow-lg border-2 border-red-200">
-                    <h3 class="text-xl font-bold mb-6 text-red-600" data-i18n="comparison.fleet.title">Angajat prin flotă</h3>
+                <div class="bg-red-50 rounded-2xl p-6 shadow-lg border-2 border-red-200">
+                    <h3 class="text-xl font-bold mb-6 text-red-600">Prin flotă</h3>
+                    
                     <div class="space-y-3 mb-6">
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.fleet.gross">Venit brut</span>
-                            <span class="font-bold">~6.000 lei</span>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-lg mr-2">❌</span>
+                            <span class="text-sm">Plătești 45% taxe (CAS, CASS, impozit pe salariu)</span>
                         </div>
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.fleet.fleet">Flota reține</span>
-                            <span class="font-bold text-red-600">5–10%</span>
+                        <div class="flex items-start">
+                            <span class="text-red-500 text-lg mr-2">❌</span>
+                            <span class="text-sm">Comision flotă 5–10%</span>
                         </div>
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.fleet.taxes">Taxe salariale</span>
-                            <span class="font-bold text-red-600">45%</span>
+                    </div>
+                    
+                    <div class="bg-red-100 rounded-lg p-4 mb-4">
+                        <div class="text-center">
+                            <p class="text-sm text-gray-700 mb-1">Rămâi cu</p>
+                            <p class="text-2xl font-bold text-red-600">~3.000–3.300 lei</p>
                         </div>
-                        <hr class="my-3">
-                        <div class="flex justify-between text-lg">
-                            <span class="font-bold" data-i18n="comparison.fleet.net">Profit net:</span>
-                            <span class="font-bold text-red-600">~3.300–3.600 lei</span>
-                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <span class="text-red-500 text-lg mr-2">❌</span>
+                        <span class="text-xs text-gray-600">Odată cu reorganizarea fiscală, convențiile civile și artificiile dispar – vei plăti integral taxele.</span>
                     </div>
                 </div>
                 
                 <!-- PFA Income Norm -->
-                <div class="bg-blue-50 rounded-2xl p-8 shadow-lg border-2 border-blue-200">
-                    <h3 class="text-xl font-bold mb-6 text-blue-600" data-i18n="comparison.pfaNorm.title">PFA cu normă de venit</h3>
+                <div class="bg-blue-50 rounded-2xl p-6 shadow-lg border-2 border-blue-200">
+                    <h3 class="text-xl font-bold mb-6 text-blue-600">PFA cu normă de venit</h3>
+                    
                     <div class="space-y-3 mb-6">
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.pfaNorm.gross">Venit brut</span>
-                            <span class="font-bold">~6.000 lei</span>
+                        <div class="text-sm">
+                            <p class="font-semibold">Taxe fixe:</p>
+                            <p class="text-xs text-gray-600">(impozit 10% pe normă, CAS și CASS peste praguri)</p>
                         </div>
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.pfaNorm.taxes">Taxe fixe (CAS + CASS + impozit)</span>
-                            <span class="font-bold text-blue-600">~1.100 lei</span>
-                        </div>
-                        <hr class="my-3">
-                        <div class="flex justify-between text-lg">
-                            <span class="font-bold" data-i18n="comparison.pfaNorm.net">Profit net:</span>
-                            <span class="font-bold text-blue-600">~4.900 lei</span>
+                    </div>
+                    
+                    <div class="bg-blue-100 rounded-lg p-4">
+                        <div class="text-center">
+                            <p class="text-sm text-gray-700 mb-1">Net final</p>
+                            <p class="text-2xl font-bold text-blue-600">~4.500 lei/lună</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- PFA Real System -->
-                <div class="bg-green-50 rounded-2xl p-8 shadow-lg border-2 border-green-200">
-                    <h3 class="text-xl font-bold mb-6 text-green-600" data-i18n="comparison.pfaReal.title">PFA cu sistem real</h3>
+                <div class="bg-green-50 rounded-2xl p-6 shadow-lg border-2 border-green-200">
+                    <h3 class="text-xl font-bold mb-6 text-green-600">PFA sistem real (cu cheltuieli deductibile)</h3>
+                    
                     <div class="space-y-3 mb-6">
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.pfaReal.gross">Venit brut</span>
-                            <span class="font-bold">~6.000 lei</span>
+                        <div class="flex justify-between text-sm">
+                            <span>Venit brut:</span>
+                            <span class="font-bold">6.000 lei</span>
                         </div>
                         <div class="flex justify-between text-sm">
-                            <span data-i18n="comparison.pfaReal.deductions">Cheltuieli deductibile (chirie, transport, telefon etc.)</span>
-                            <span class="font-bold text-green-600">scazi sub 48.000 lei/an</span>
+                            <span>Cheltuieli deductibile:</span>
+                            <span class="font-bold">2.200 lei/lună</span>
                         </div>
-                        <div class="flex justify-between">
-                            <span data-i18n="comparison.pfaReal.taxes">Taxe</span>
-                            <span class="font-bold text-green-600">aproape zero</span>
+                        <div class="flex justify-between text-sm">
+                            <span>Profit net:</span>
+                            <span class="font-bold">3.800 lei/lună (~45.600 lei/an)</span>
                         </div>
-                        <hr class="my-3">
-                        <div class="flex justify-between text-lg">
-                            <span class="font-bold" data-i18n="comparison.pfaReal.net">Profit net:</span>
-                            <span class="font-bold text-green-600">~5.800 lei</span>
+                        <div class="bg-green-100 p-2 rounded text-xs">
+                            <span class="font-semibold">Sub 48.000 →</span> nu plătești CAS
+                        </div>
+                        <div class="text-sm">
+                            <span class="font-semibold">Taxe:</span> impozit 10% (380 lei) + CASS 10% (380 lei)
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-100 rounded-lg p-4 mb-4">
+                        <div class="text-center">
+                            <p class="text-sm text-gray-700 mb-1">Net final</p>
+                            <p class="text-2xl font-bold text-green-600">~4.240 lei/lună</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <span class="text-green-500 text-lg mr-2">✅</span>
+                            <span class="text-xs">Deduci chiria apartamentului, utilități, telefon, echipamente, cursuri</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-green-500 text-lg mr-2">✅</span>
+                            <span class="text-xs">După 3 luni → poți lua credit bancar pe firmă</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="bg-yellow-50 rounded-2xl p-6 text-center">
-                <p class="text-sm text-gray-700" data-i18n="comparison.note">
-                    <span class="font-bold">Notă:</span> Odată cu reorganizarea fiscală, artificiile de tip convenție civilă, parteneriat sau drepturi de autor dispar → taxele trebuie plătite integral.
-                </p>
             </div>
         </div>
     </section>
 
     <!-- Services Overview -->
-    <section class="py-16 bg-gray-50">
+    <section id="accounting" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6" data-i18n="services.title">Ce îți oferim concret</h2>
@@ -426,46 +369,95 @@
         </div>
     </section>
 
-    <!-- Process Steps -->
-    <section class="py-16 bg-white">
+    <!-- Vehicle Earnings Comparison -->
+    <section id="ebike" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6" data-i18n="steps.title">Pași</h2>
+                <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-6" data-i18n="earnings.title">Cu ce câștigi mai mult pe Bolt Food?</h2>
             </div>
             
-            <div class="grid md:grid-cols-5 gap-8">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-4">1</div>
-                    <h3 class="text-lg font-bold mb-3" data-i18n="steps.items.0.title">Completezi formularul nostru.</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="steps.items.0.desc">Îți luăm toate datele necesare.</p>
+            <!-- Earnings Table -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-gray-200">
+                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.vehicle">Vehicul</th>
+                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.gross">Venit brut lunar*</th>
+                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.expenses">Cheltuieli (lunare)</th>
+                                <th class="text-left py-4 px-4 font-bold" data-i18n="earnings.table.profit">Profit net estimat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100 bg-green-50">
+                                <td class="py-4 px-4 font-semibold">🚲 <span data-i18n="earnings.table.ebike">Bicicletă electrică</span></td>
+                                <td class="py-4 px-4">~9.200 lei</td>
+                                <td class="py-4 px-4">Chirie 1.000 lei + curent ~100 lei</td>
+                                <td class="py-4 px-4 font-bold text-green-600">~8.100 lei</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 font-semibold">🛵 <span data-i18n="earnings.table.scooter">Scuter</span></td>
+                                <td class="py-4 px-4">~10.000 lei</td>
+                                <td class="py-4 px-4">Chirie 1.500 lei + benzină + service ~1.000 lei</td>
+                                <td class="py-4 px-4 font-bold text-orange-600">~7.500 lei</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 font-semibold">🚗 <span data-i18n="earnings.table.car">Mașină</span></td>
+                                <td class="py-4 px-4">~10.200 lei</td>
+                                <td class="py-4 px-4">Chirie 2.000 lei + combustibil + întreținere ~1.500 lei</td>
+                                <td class="py-4 px-4 font-bold text-red-600">~6.700 lei</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-r from-neon-magenta to-neon-blue rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-4">2</div>
-                    <h3 class="text-lg font-bold mb-3" data-i18n="steps.items.1.title">Îți pregătim dosarul complet.</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="steps.items.1.desc">Echipa noastră pregătește tot.</p>
+                <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+                    <p class="text-sm text-gray-700"><span class="font-bold">⚡ Notă:</span> <span data-i18n="earnings.note">Calcul orientativ: 8h/zi × 6 zile/săptămână + bacșiș (~70 lei/zi). În perioadele aglomerate, bicicleta electrică poate dubla veniturile → e mai rapidă și mai flexibilă decât scuterul sau mașina.</span></p>
+                </div>
+            </div>
+            
+            <!-- E-bike Benefits -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-green-600" data-i18n="earnings.benefits.title">Beneficii extra pentru e-bike:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span data-i18n="earnings.benefits.items.0">Costuri mai mici – fără combustibil, RCA, ITP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span data-i18n="earnings.benefits.items.1">Timp operațional mai mare – nu stai blocat în trafic</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span data-i18n="earnings.benefits.items.2">Fără probleme de parcare sau amenzi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span data-i18n="earnings.benefits.items.3">Acces în zone pietonale și centre comerciale</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3">✅</span>
+                            <span data-i18n="earnings.benefits.items.4">Zero emisii – viitorul transportului urban</span>
+                        </li>
+                    </ul>
                 </div>
                 
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-r from-neon-blue to-neon-cyan rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-4">3</div>
-                    <h3 class="text-lg font-bold mb-3" data-i18n="steps.items.2.title">Depunem actele online la ANAF.</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="steps.items.2.desc">Ne ocupăm de toată birocratia.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-4">4</div>
-                    <h3 class="text-lg font-bold mb-3" data-i18n="steps.items.3.title">Primești documentele în 3–5 zile.</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="steps.items.3.desc">Îți trimitem tot și explicăm pașii.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-r from-neon-magenta to-neon-blue rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-4">5</div>
-                    <h3 class="text-lg font-bold mb-3" data-i18n="steps.items.4.title">Într-o săptămână ești pe stradă</h3>
-                    <p class="text-gray-600 text-sm" data-i18n="steps.items.4.desc">cu bicicleta și cont de rider activ.</p>
+                <div class="bg-gradient-to-br from-neon-cyan/10 to-neon-magenta/10 rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold mb-6" data-i18n="earnings.cta.title">Închiriere E-bike premium</h3>
+                    <div class="space-y-3 mb-6">
+                        <p class="text-gray-700"><span class="font-bold">Omega/Zumo</span> → 1.000 lei/lună + garanție 500 lei.</p>
+                        <p class="text-sm text-gray-600" data-i18n="earnings.cta.includes">Include service lunar + schimb baterii la nevoie.</p>
+                    </div>
+                    <a href="https://wa.me/4077579706" class="inline-block bg-green-500 text-white px-6 py-3 rounded-pill font-bold hover:bg-green-600 transition-colors">
+                        Rezervă direct pe WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-white">
@@ -477,7 +469,7 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- PFA Setup -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex flex-col h-full">
                     <h3 class="text-xl font-bold mb-4" data-i18n="pricing.pfa.title">PFA Setup</h3>
                     <div class="mb-6">
                         <span class="text-4xl font-bold text-primary" data-i18n="pricing.pfa.price">1.500 lei</span>
@@ -509,11 +501,13 @@
                             <span data-i18n="pricing.pfa.features.3">Suport juridic inclus</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="block w-full bg-gradient-to-r from-neon-cyan to-neon-magenta text-white text-center py-3 rounded-pill font-bold hover:shadow-lg transition-all duration-300" data-i18n="cta.getStarted">Începe acum</a>
+                    <div class="mt-auto">
+                        <a href="#contact" class="block w-full bg-green-500 text-white text-center py-3 rounded-pill font-bold hover:bg-green-600 hover:shadow-lg transition-all duration-300" data-i18n="cta.getStarted">Începe acum</a>
+                    </div>
                 </div>
 
                 <!-- E-Bike Rental -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex flex-col h-full">
                     <h3 class="text-xl font-bold mb-4" data-i18n="pricing.bike.title">Închiriere E-Bike</h3>
                     <div class="mb-6">
                         <span class="text-4xl font-bold text-primary" data-i18n="pricing.bike.price">1.000 lei</span>
@@ -546,18 +540,20 @@
                         </li>
                     </ul>
                     <p class="text-xs text-gray-500 mb-6" data-i18n="pricing.bike.note">+ garanție 500 lei</p>
-                    <button onclick="openModal('bike-modal')" class="block w-full bg-gradient-to-r from-neon-magenta to-neon-blue text-white text-center py-3 rounded-pill font-bold hover:shadow-lg transition-all duration-300" data-i18n="cta.bookBike">Rezervă bicicletă</button>
+                    <div class="mt-auto">
+                        <button onclick="openModal('bike-modal')" class="block w-full bg-green-500 text-white text-center py-3 rounded-pill font-bold hover:bg-green-600 hover:shadow-lg transition-all duration-300" data-i18n="cta.bookBike">Rezervă bicicletă</button>
+                    </div>
                 </div>
 
                 <!-- Complete Package -->
-                <div class="bg-white rounded-2xl p-8 shadow-xl border-2 border-gradient-to-r from-neon-cyan to-neon-magenta relative">
+                <div class="bg-white rounded-2xl p-8 shadow-xl border-2 border-gradient-to-r from-neon-cyan to-neon-magenta relative flex flex-col h-full">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <span class="bg-gradient-to-r from-neon-cyan to-neon-magenta text-white px-6 py-2 rounded-pill text-sm font-bold shadow-lg" data-i18n="pricing.complete.popular">🎨 Pachet Complet Bolt</span>
                     </div>
                     <h3 class="text-xl font-bold mb-4" data-i18n="pricing.complete.title">Pachet Complet Bolt</h3>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold bg-gradient-to-r from-neon-cyan to-neon-magenta bg-clip-text text-transparent" data-i18n="pricing.complete.price">2.000 lei</span>
-                        <span class="text-gray-600 ml-2" data-i18n="pricing.complete.period">avans</span>
+                        <div class="text-3xl font-bold text-blue-900">2.000 lei avans</div>
+                        <div class="text-lg font-semibold text-gray-700 mt-1">+ 100 lei/lună timp de 12 luni</div>
                     </div>
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-center text-sm">
@@ -585,56 +581,14 @@
                             <span data-i18n="pricing.complete.features.3">Suport prioritar complet</span>
                         </li>
                     </ul>
-                    <p class="text-xs text-center text-gray-500 mb-6">Total: 3.800 lei în 12 luni (vs. 4.500 lei separat)</p>
-                    <a href="#contact" class="block w-full bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-blue text-white text-center py-4 rounded-pill font-black text-lg hover:shadow-xl hover:shadow-neon-cyan/50 transition-all duration-300 transform hover:scale-105" data-i18n="cta.getStarted">Începe acum</a>
+                    <div class="mt-auto">
+                        <a href="#contact" class="block w-full bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-blue text-white text-center py-3 rounded-pill font-bold hover:shadow-xl hover:shadow-neon-cyan/50 transition-all duration-300 transform hover:scale-105" data-i18n="cta.getStarted">Începe acum</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-i18n="testimonials.title">Ce spun riderii</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">AM</div>
-                        <div>
-                            <div class="font-semibold" data-i18n="testimonials.items.0.name">Alex M.</div>
-                            <div class="text-sm text-gray-600" data-i18n="testimonials.items.0.role">Rider Bolt Food</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700" data-i18n="testimonials.items.0.text">"Cu PFA-ul făcut prin iRent Food am trecut de la 3.200 lei la 5.800 lei pe lună. Bicicleta e perfectă pentru oraș!"</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">MS</div>
-                        <div>
-                            <div class="font-semibold" data-i18n="testimonials.items.1.name">Maria S.</div>
-                            <div class="text-sm text-gray-600" data-i18n="testimonials.items.1.role">Rider Glovo</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700" data-i18n="testimonials.items.1.text">"Contabilitatea părea complicată, dar cu ghidul lor îmi ia 5 minute pe lună. Recomand!"</p>
-                </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">RP</div>
-                        <div>
-                            <div class="font-semibold" data-i18n="testimonials.items.2.name">Raj P.</div>
-                            <div class="text-sm text-gray-600" data-i18n="testimonials.items.2.role">Rider Wolt</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700" data-i18n="testimonials.items.2.text">"Great service! They helped me with everything in English. Now I earn much more money."</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-white">
@@ -644,6 +598,56 @@
             </div>
             
             <div class="space-y-4">
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Sună super! Cum încep?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <div class="text-gray-600 space-y-3">
+                                <div class="flex items-start">
+                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
+                                    <div>
+                                        <p class="font-semibold">Completezi formularul nostru.</p>
+                                        <p class="text-sm text-gray-500">Îți luăm toate datele necesare.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
+                                    <div>
+                                        <p class="font-semibold">Îți pregătim dosarul complet.</p>
+                                        <p class="text-sm text-gray-500">Echipa noastră pregătește tot.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">3</span>
+                                    <div>
+                                        <p class="font-semibold">Depunem actele online la ANAF.</p>
+                                        <p class="text-sm text-gray-500">Ne ocupăm de toată birocratia.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">4</span>
+                                    <div>
+                                        <p class="font-semibold">Primești documentele în 3–5 zile.</p>
+                                        <p class="text-sm text-gray-500">Îți trimitem tot și explicăm pașii.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">5</span>
+                                    <div>
+                                        <p class="font-semibold">Într-o săptămână ești pe stradă</p>
+                                        <p class="text-sm text-gray-500">cu bicicleta și cont de rider activ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
                     <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
                         <span data-i18n="faq.items.0.question">Cât durează să încep?</span>
@@ -695,7 +699,91 @@
                     </button>
                     <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
                         <div class="pb-4">
-                            <p class="text-gray-600" data-i18n="faq.items.3.answer">→ 500 lei, returnabili.</p>
+                            <p class="text-gray-600" data-i18n="faq.items.3.answer">→ 500 lei, returnabili. Garanția se returnează integral la sfârșitul contractului dacă bicicleta este în stare bună.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Pot lucra și pe alte platforme?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Da, cu PFA-ul poți lucra pe orice platformă: Bolt, Glovo, Wolt, etc. Nu ești limitat la o singură platformă.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Ce se întâmplă dacă nu vreau să mai continui?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Poți închide PFA-ul oricând fără costuri suplimentare. Bicicleta se returnează, iar garanția îți este restituită.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Ce se întâmplă dacă se strică bicicleta?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Toate bicicletele sunt în garanție. Dacă apare o problemă care nu este din vina ta, noi ne ocupăm de reparație și costuri. În plus, ai inclusă o servisare completă o dată pe lună.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Pot deduce benzina sau transportul dacă folosesc și alt vehicul?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Da, orice cheltuială justificată prin PFA (deplasare, telefon, echipament de protecție) se poate deduce fiscal și reduce impozitul final.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Pot să-mi cresc veniturile pe firmă și să iau credit?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transformation" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Da. După 3–6 luni de activitate, ai istoric oficial și poți aplica la credite pentru persoane juridice, leasing sau chiar carduri business.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md">
+                    <button class="faq-button w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 rounded-2xl" aria-expanded="false">
+                        <span>Am nevoie de sediu social?</span>
+                        <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                        <div class="pb-4">
+                            <p class="text-gray-600">→ Da, dar poate fi chiar adresa ta de domiciliu. Nu e nevoie să închiriezi spații suplimentare.</p>
                         </div>
                     </div>
                 </div>
@@ -711,113 +799,67 @@
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-i18n="contact.subtitle">Suntem aici să te ajutăm. Scrie-ne și îți răspundem în maxim 2 ore.</p>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Contact Form -->
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <form id="contact-form">
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.name">Nume complet</label>
-                                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nume complet" data-i18n="contact.form.name">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.phone">Telefon / WhatsApp</label>
-                                <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Telefon / WhatsApp" data-i18n="contact.form.phone">
-                            </div>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.email">Email</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Email" data-i18n="contact.form.email">
-                        </div>
-                        
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.language">Limba preferată</label>
-                                <select name="language" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="ro" data-i18n="contact.form.languages.ro">Română</option>
-                                    <option value="en" data-i18n="contact.form.languages.en">English</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.interest">Mă interesează</label>
-                                <select name="interest" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="pfa" data-i18n="contact.form.interests.pfa">PFA Setup</option>
-                                    <option value="accounting" data-i18n="contact.form.interests.accounting">Contabilitate DIY</option>
-                                    <option value="bike" data-i18n="contact.form.interests.bike">Închiriere E-Bike</option>
-                                    <option value="complete" data-i18n="contact.form.interests.complete">Pachet Complet</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.form.message">Mesaj (opțional)</label>
-                            <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Mesaj (opțional)" data-i18n="contact.form.message"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors" data-i18n="cta.submit">Trimite mesajul</button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <h3 class="text-xl font-bold mb-8" data-i18n="contact.info.title">Informații de contact</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Contact Options -->
+            <div class="max-w-4xl mx-auto">
+                <!-- Primary Contact Methods -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- WhatsApp -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center border-2 border-green-200 hover:border-green-400 transition-colors">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                             </svg>
-                            <div>
-                                <h4 class="font-semibold" data-i18n="contact.info.whatsapp">WhatsApp</h4>
-                                <a href="https://wa.me/40123456789" class="text-primary hover:underline">+40 123 456 789</a>
-                            </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold" data-i18n="contact.info.email">Email</h4>
-                                <a href="mailto:contact@rider-i-rent.ro" class="text-primary hover:underline">contact@rider-i-rent.ro</a>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold" data-i18n="contact.info.location">Locația</h4>
-                                <p class="text-gray-600" data-i18n="contact.info.locationValue">București, România</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-primary mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold" data-i18n="contact.info.hours">Program</h4>
-                                <p class="text-gray-600" data-i18n="contact.info.hoursValue">Luni-Vineri: 9:00-18:00</p>
-                            </div>
-                        </div>
+                        <h3 class="text-xl font-bold mb-4" data-i18n="contact.info.whatsapp">WhatsApp</h3>
+                        <p class="text-gray-600 mb-6">Răspunsul cel mai rapid - în maxim 30 de minute!</p>
+                        <a href="https://wa.me/4077579706" class="inline-block bg-green-500 text-white px-8 py-3 rounded-pill font-bold hover:bg-green-600 transition-colors text-lg">
+                            Scrie pe WhatsApp
+                        </a>
+                        <p class="text-sm text-gray-500 mt-3">+40 775 797 06</p>
                     </div>
                     
-                    <div class="mt-8 p-6 bg-green-50 rounded-lg">
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    <!-- Email -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg text-center border-2 border-blue-200 hover:border-blue-400 transition-colors">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <div>
-                                <h4 class="font-semibold text-green-800">Răspunsuri rapide</h4>
-                                <p class="text-green-700 text-sm">Îți răspundem în maxim 2 ore în zilele lucrătoare</p>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4" data-i18n="contact.info.email">Email</h3>
+                        <p class="text-gray-600 mb-6">Pentru întrebări detaliate sau documente</p>
+                        <a href="mailto:contact@i-rent.ro" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-pill font-bold hover:bg-blue-600 transition-colors text-lg">
+                            Trimite Email
+                        </a>
+                        <p class="text-sm text-gray-500 mt-3">contact@i-rent.ro</p>
+                    </div>
+                </div>
+                
+                <!-- Additional Info -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-8 text-center">
+                        <div>
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
                             </div>
+                            <h4 class="font-semibold mb-2" data-i18n="contact.info.location">Locația</h4>
+                            <p class="text-gray-600" data-i18n="contact.info.locationValue">București, România</p>
+                        </div>
+                        
+                        <div>
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold mb-2" data-i18n="contact.info.hours">Program</h4>
+                            <p class="text-gray-600" data-i18n="contact.info.hoursValue">Luni-Vineri: 9:00-18:00</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -827,15 +869,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <div class="md:col-span-2">
-                    <div class="text-2xl font-bold text-primary mb-4">Rider i-Rent</div>
+                    <div class="text-2xl font-bold text-primary mb-4">Livrator i-Rent</div>
                     <p class="text-gray-300 mb-6 max-w-md" data-i18n="footer.description">Helping food delivery riders earn more through legal PFA setup, simple accounting, and e-bike rentals.</p>
                     <div class="flex space-x-4">
-                        <a href="https://wa.me/40123456789" class="text-gray-300 hover:text-white transition-colors">
+                        <a href="https://wa.me/4077579706" class="text-gray-300 hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
                             </svg>
                         </a>
-                        <a href="mailto:contact@rider-i-rent.ro" class="text-gray-300 hover:text-white transition-colors">
+                        <a href="mailto:contact@i-rent.ro" class="text-gray-300 hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
@@ -867,7 +909,7 @@
             <div class="border-t border-gray-700 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-300 text-sm mb-4 md:mb-0" data-i18n="footer.copyright">© 2024 Rider i-Rent. Toate drepturile rezervate.</p>
-                    <p class="text-gray-300 text-sm" data-i18n="footer.note">Suport multilingv: Română, English, नेपाली</p>
+                    <p class="text-gray-300 text-sm" data-i18n="footer.note">Suport multilingv: Română, English</p>
                 </div>
             </div>
         </div>
@@ -941,7 +983,7 @@
     <!-- Mobile Sticky Bottom Bar -->
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40 md:hidden">
         <div class="flex gap-2">
-            <a href="https://wa.me/40123456789" class="flex-1 bg-green-500 text-white text-center py-3 rounded-pill font-bold">WhatsApp</a>
+            <a href="https://wa.me/4077579706" class="flex-1 bg-green-500 text-white text-center py-3 rounded-pill font-bold">WhatsApp</a>
             <button onclick="openModal('bike-modal')" class="flex-1 bg-gradient-to-r from-neon-magenta to-neon-blue text-white text-center py-3 rounded-pill font-bold" data-i18n="cta.bookBike">Rezervă bicicletă</button>
         </div>
     </div>

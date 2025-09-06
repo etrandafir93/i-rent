@@ -23,14 +23,15 @@ window.I18N = {
     },
     hero: {
       title: "Păstrează-ți banii, muncești pentru tine, nu pentru flotă.",
-      subtitle: "Pachetul complet pentru livratori Bolt/Glovo – fără flotă, fără comisioane ascunse.",
-      explanation: "PFA + contabilitate simplă + închiriere bicicletă electrică → tot ce ai nevoie ca să începi legal și să rămâi cu mai mulți bani în buzunar.",
+      heroSubtitle: "Mai puține taxe la stat, zero comision la flotă.",
+      subtitle: "PFA · Contabilitate · Închiriere de biciclete electrice",
       benefits: [
         "Fără flotă, fără comision de 5–10%",
         "Fără taxe salariale de 45% ca angajat",
         "Îți deduci cheltuielile (chirie, telefon, transport)",
         "Poți accesa credite bancare pe firmă după 3 luni",
-        "E-bike premium la doar 1.000 lei/lună"
+        "E-bike premium la doar 1.000 lei/lună",
+        "Program flexibil – lucrezi cât vrei și când vrei"
       ]
     },
     audience: {
@@ -407,7 +408,7 @@ window.I18N = {
         anpc: "ANPC"
       },
       copyright: "© 2024 Rider i-Rent. Toate drepturile rezervate.",
-      note: "Suport multilingv: Română, English, नेपाली"
+      note: "Suport multilingv: Română, English"
     },
     toast: {
       success: "Mesajul a fost trimis cu succes!",
@@ -458,6 +459,7 @@ window.I18N = {
     },
     hero: {
       title: "Keep your money, work for yourself, not for the fleet.",
+      heroSubtitle: "Lower taxes to the state, zero commission to the fleet.",
       subtitle: "Complete package for Bolt/Glovo couriers – no fleet, no hidden commissions.",
       explanation: "PFA + simple accounting + e-bike rental → everything you need to start legally and keep more money in your pocket.",
       benefits: [
@@ -465,7 +467,8 @@ window.I18N = {
         "No 45% payroll taxes as employee",
         "Deduct your expenses (rent, phone, transport)",
         "Access bank loans on company after 3 months",
-        "Premium e-bike for only €50/month"
+        "Premium e-bike for only €50/month",
+        "Flexible schedule – work as much and when you want"
       ]
     },
     value: {
@@ -734,7 +737,7 @@ window.I18N = {
         anpc: "ANPC"
       },
       copyright: "© 2024 Rider i-Rent. All rights reserved.",
-      note: "Multilingual support: Română, English, नेपाली"
+      note: "Multilingual support: Română, English"
     },
     toast: {
       success: "Message sent successfully!",
