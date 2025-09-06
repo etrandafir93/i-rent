@@ -437,8 +437,8 @@ window.I18N = {
   },
   en: {
     meta: {
-      title: "Livrator i-Rent - PFA Setup, Accounting & E-Bikes for Couriers"
-      description: "Earn more as a food delivery rider! We help with PFA setup, accounting, and provide e-bikes. From €175 to €325 per month."
+      title: "Livrator i-Rent - PFA Setup, Accounting & E-Bikes for Couriers",
+      description: "Earn more as a food delivery rider! We help with PFA setup, accounting, and provide e-bikes. From 3.500 lei to 6.500 lei per month."
     },
     nav: { 
       pfa: "PFA Setup", 
@@ -466,7 +466,7 @@ window.I18N = {
         "No 45% payroll taxes as employee",
         "Deduct your expenses (rent, phone, transport)",
         "Access bank loans on company after 3 months",
-        "Premium e-bike for only €50/month",
+        "Premium e-bike for only 250 RON/month",
         "Flexible schedule – work as much and when you want"
       ]
     },
@@ -496,7 +496,7 @@ window.I18N = {
         scooter: "Scooter",
         car: "Car"
       },
-      note: "Indicative calculation: 8h/day × 6 days/week + tips (~€3.5/day). During busy periods, electric bike can double income → it's faster and more flexible than scooter or car.",
+      note: "Indicative calculation: 8h/day × 6 days/week + tips (~70 RON/day). During busy periods, electric bike can double income → it's faster and more flexible than scooter or car.",
       benefits: {
         title: "Extra benefits for e-bike:",
         items: [
@@ -651,19 +651,19 @@ window.I18N = {
       deductions: {
         title: "Deductible expenses:",
         items: [
-          "Food during work hours - €75/month",
-          "Bike rental - €50/month",
-          "Rent (partial) - €25/month", 
-          "Phone and internet - €10/month",
-          "Work clothes - €15/month"
+          "Food during work hours - 1500 RON/month",
+          "Bike rental - 1000 RON/month",
+          "Rent (partial) - 500 RON/month",
+          "Phone and internet - 200 RON/month",
+          "Work clothes - 300 RON/month"
         ]
       },
       income: {
         title: "Income calculation:",
         employee: "As employee in fleet:",
-        employeeAmount: "€175/month (net)",
+        employeeAmount: "3500 RON/month (net)",
         pfa: "As PFA with deductions:",
-        pfaAmount: "€320-325/month (net)"
+        pfaAmount: "6400-6500 RON/month (net)"
       }
     },
     ebike: {
@@ -692,10 +692,10 @@ window.I18N = {
       },
       pricing: {
         title: "Rental:",
-        daily: "One day - €7.5",
-        weekly: "One week - €35",
-        monthly: "One month - €50",
-        deposit: "Refundable deposit: €25"
+        daily: "One day - 150 RON",
+        weekly: "One week - 700 RON",
+        monthly: "One month - 1000 RON",
+        deposit: "Refundable deposit: 500 RON"
       }
     },
     pricing: {
@@ -703,7 +703,7 @@ window.I18N = {
       subtitle: "Choose the package that fits you. Transparent, no hidden costs.",
       pfa: {
         title: "PFA Setup",
-        price: "€100",
+        price: "2000 RON",
         period: "advance",
         features: [
           "Complete PFA setup",
@@ -712,11 +712,11 @@ window.I18N = {
           "Legal support included",
           "First invoice free"
         ],
-        note: "+ €5/month support (first year)"
+        note: "+ 100 RON/month support (first year)"
       },
       accounting: {
         title: "DIY Accounting Course",
-        price: "€7.5",
+        price: "149 RON",
         period: "one time",
         features: [
           "Complete step-by-step guide",
@@ -728,7 +728,7 @@ window.I18N = {
       },
       bike: {
         title: "E-Bike Rental",
-        price: "€50",
+        price: "1000 RON",
         period: "/month",
         features: [
           "New electric bike",
@@ -737,11 +737,11 @@ window.I18N = {
           "Battery replacement",
           "24/7 support"
         ],
-        note: "Deposit: €25 (refundable)"
+        note: "Deposit: 500 RON (refundable)"
       },
       complete: {
         title: "Complete Package",
-        price: "€125",
+        price: "2500 RON",
         period: "advance",
         features: [
           "Everything from PFA Setup",
@@ -751,7 +751,7 @@ window.I18N = {
           "Personal consultation"
         ],
         popular: "Most popular",
-        note: "You save €32.5!"
+        note: "You save 649 RON!"
       }
     },
     testimonials: {
@@ -760,7 +760,7 @@ window.I18N = {
         {
           name: "Alex M.",
           role: "Bolt Food Rider",
-          text: "With the PFA setup through Livrator i-Rent I went from €160 to €290 per month. The bike is perfect for the city!"
+          text: "With the PFA setup through Livrator i-Rent I went from 3200 RON to 5800 RON per month. The bike is perfect for the city!"
         },
         {
           name: "Maria S.", 
@@ -783,7 +783,7 @@ window.I18N = {
         },
         {
           question: "What taxes do I pay as PFA?",
-          answer: "As PFA on income norm, you pay a fixed monthly tax of about €15-20 (depending on the locality where you set up your PFA). Plus CASS (health insurance) which is about 10% of declared income, but with correct deductions this decreases significantly."
+          answer: "As PFA on income norm, you pay a fixed monthly tax of about 300-400 RON (depending on the locality where you set up your PFA). Plus CASS (health insurance) which is about 10% of declared income, but with correct deductions this decreases significantly."
         },
         {
           question: "Can I use the bike for other activities?",
@@ -870,8 +870,8 @@ window.I18N = {
           startDate: "Start date",
           duration: "Rental period",
           durations: {
-            week: "One week (€35)",
-            month: "One month (€50)",
+            week: "One week (700 RON)",
+            month: "One month (1000 RON)",
             custom: "Other period"
           },
           message: "Additional message (optional)"

@@ -2,6 +2,9 @@
 let currentLanguage = localStorage.getItem('language') || 'ro';
 
 function setLanguage(lang) {
+    console.log('Setting language to:', lang);
+    console.log('Available languages:', Object.keys(window.I18N || {}));
+    
     currentLanguage = lang;
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;

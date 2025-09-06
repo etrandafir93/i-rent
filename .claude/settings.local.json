@@ -11,7 +11,10 @@
       "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
       "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
       "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
-      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)"
+      "Read(/C:\\Users\\Emanuel Trandafir\\Desktop\\test\\i-rent/**)",
+      "Bash(python:*)",
+      "Bash(start index.html)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
