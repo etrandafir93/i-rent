@@ -13,7 +13,8 @@ window.I18N = {
       contact: "Contact" 
     },
     cta: { 
-      start: "Începe acum", 
+      start: "Începe acum",
+      startMobile: "Începe", 
       how: "Află cum funcționează", 
       bookBike: "Rezervă bicicletă",
       getStarted: "Începe acum",
@@ -449,7 +450,8 @@ window.I18N = {
       contact: "Contact" 
     },
     cta: { 
-      start: "Start now", 
+      start: "Start now",
+      startMobile: "Start", 
       how: "See how it works", 
       bookBike: "Book a bike",
       getStarted: "Get started",

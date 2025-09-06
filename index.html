@@ -54,7 +54,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-primary">Rider i-Rent</span>
+                    <span class="text-xl sm:text-2xl font-bold text-primary">Livrator i-Rent</span>
                 </div>
                 
                 <!-- Desktop Navigation -->
@@ -67,22 +67,33 @@
                     <a href="#contact" class="text-gray-700 hover:text-primary transition-colors" data-i18n="nav.contact">Contact</a>
                 </div>
                 
-                <!-- Language Switcher & CTA -->
-                <div class="flex items-center space-x-4">
+                <!-- Desktop Language Switcher & CTA -->
+                <div class="hidden md:flex items-center space-x-4">
                     <div class="flex items-center space-x-2">
                         <button onclick="setLanguage('ro')" class="lang-btn text-sm px-2 py-1 rounded transition-colors" data-lang="ro">RO</button>
                         <span class="text-gray-300">|</span>
                         <button onclick="setLanguage('en')" class="lang-btn text-sm px-2 py-1 rounded transition-colors" data-lang="en">EN</button>
                     </div>
-                    <a href="#pricing" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors" data-i18n="cta.start">Începe acum</a>
+                    <a href="#pricing" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap" data-i18n="cta.start">Începe acum</a>
                 </div>
                 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                <!-- Mobile Controls -->
+                <div class="flex md:hidden items-center space-x-2">
+                    <!-- Mobile Language Switcher -->
+                    <div class="flex items-center space-x-1">
+                        <button onclick="setLanguage('ro')" class="lang-btn text-xs px-1.5 py-1 rounded transition-colors" data-lang="ro">RO</button>
+                        <span class="text-gray-300 text-xs">|</span>
+                        <button onclick="setLanguage('en')" class="lang-btn text-xs px-1.5 py-1 rounded transition-colors" data-lang="en">EN</button>
+                    </div>
+                    <!-- Mobile CTA -->
+                    <a href="#pricing" class="bg-primary text-white px-2 py-1.5 rounded text-sm hover:bg-primary-dark transition-colors whitespace-nowrap" data-i18n="cta.startMobile">Începe</a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="p-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
             
             <!-- Mobile Navigation -->
@@ -94,10 +105,6 @@
                     <a href="#pricing" class="text-gray-700 hover:text-primary px-3 py-2" data-i18n="nav.pricing">Prețuri</a>
                     <a href="#faq" class="text-gray-700 hover:text-primary px-3 py-2" data-i18n="nav.faq">Întrebări</a>
                     <a href="#contact" class="text-gray-700 hover:text-primary px-3 py-2" data-i18n="nav.contact">Contact</a>
-                    <div class="flex gap-2 px-3 py-2 border-t border-gray-200 mt-4">
-                        <button onclick="setLanguage('ro')" class="lang-btn text-sm px-2 py-1 rounded transition-colors" data-lang="ro">RO</button>
-                        <button onclick="setLanguage('en')" class="lang-btn text-sm px-2 py-1 rounded transition-colors" data-lang="en">EN</button>
-                    </div>
                 </div>
             </div>
         </nav>
